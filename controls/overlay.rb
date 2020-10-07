@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-include_controls "cms-ars-3.1-moderate-redhat-enterprise-linux-7-stig-overlay" do
+include_controls "redhat-enterprise-linux-7-stig-baseline" do
   
   control "V-71933" do
     impact 0.0
