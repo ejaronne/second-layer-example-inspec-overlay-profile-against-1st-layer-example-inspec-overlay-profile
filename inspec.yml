@@ -58,7 +58,7 @@ inputs:
 - name: min_reuse_generations
   description: V-71933 Number of reuse generations.
   type: numeric
-  value: 10
+  value: 6
   profile: redhat-enterprise-linux-7-stig-baseline
 
 - name: days_of_inactivity
@@ -70,7 +70,7 @@ inputs:
 - name: unsuccessful_attempts
   description: V-71943 The number of unsuccessful login attempts within a certain interval before lockout.
   type: numeric
-  value: 5
+  value: 10
   profile: redhat-enterprise-linux-7-stig-baseline
 
 - name: fail_interval
