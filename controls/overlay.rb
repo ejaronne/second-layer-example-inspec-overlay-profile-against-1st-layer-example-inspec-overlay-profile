@@ -9,6 +9,7 @@ include_controls "redhat-enterprise-linux-7-stig-baseline" do
   
   control 'V-71943' do
 	title "The ACME Red Hat Enterprise Linux operating system must be configured to lock accounts for a minimum of 60 minutes after TEN unsuccessful logon attempts within a 120-minute timeframe."
+	  desc 'caveat', 'The ACME project needs to set this to TEN since we have an approved risk-based decision on 10/2/2020 in CFACTS allowing it'
 	  desc 'check', "
 	    Check that the ACME system locks an account for a minimum of 60 minutes after
 	TEN unsuccessful logon attempts within a period of 120 minutes with the
