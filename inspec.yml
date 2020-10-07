@@ -58,7 +58,7 @@ inputs:
 - name: min_reuse_generations
   description: V-71933 Number of reuse generations.
   type: numeric
-  value: 6
+  value: 10
   profile: redhat-enterprise-linux-7-stig-baseline
 
 - name: days_of_inactivity
