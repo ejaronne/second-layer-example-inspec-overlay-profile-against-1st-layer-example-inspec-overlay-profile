@@ -4,17 +4,17 @@ include_controls "redhat-enterprise-linux-7-stig-baseline" do
   
   control "V-71933" do
     impact 0.0
-    desc 'caveat', 'This is Not Applicable for the ACME project since we have an approved risk-based decision on 10/1/2020 in CFACTS allowing reuse of old passwords'
-    describe 'This is Not Applicable for the ACME project since we have an approved risk-based decision on 10/1/2020 in CFACTS allowing reuse of old passwords' do
-      skip 'This is Not Applicable for the ACME project since we have an approved risk-based decision on 10/1/2020 in CFACTS allowing reuse of old passwords'
+    desc 'caveat', 'This is Not Applicable for the project since we have an approved risk-based decision on 10/1/2021 allowing reuse of old passwords'
+    describe 'This is Not Applicable for the project since we have an approved risk-based decision on 10/1/2021 allowing reuse of old passwords' do
+      skip 'This is Not Applicable for the project since we have an approved risk-based decision on 10/1/2021 allowing reuse of old passwords'
     end
   end 
   
   control 'V-71943' do
-	title "The ACME Red Hat Enterprise Linux operating system must be configured to lock accounts for a minimum of 60 minutes after TEN unsuccessful logon attempts within a 120-minute timeframe."
-	  desc 'caveat', 'The ACME project needs to set this to TEN since we have an approved risk-based decision on 10/2/2020 in CFACTS allowing it'
+	title "The Red Hat Enterprise Linux operating system must be configured to lock accounts for a minimum of 60 minutes after TEN unsuccessful logon attempts within a 120-minute timeframe."
+	  desc 'caveat', 'The project needs to set this to TEN since we have an approved risk-based decision on 10/2/2021 allowing it'
 	  desc 'check', "
-	    Check that the ACME system locks an account for a minimum of 60 minutes after
+	    Check that the system locks an account for a minimum of 60 minutes after
 	TEN unsuccessful logon attempts within a period of 120 minutes with the
 	following command:
 	    # grep pam_faillock.so /etc/pam.d/password-auth
@@ -44,7 +44,7 @@ include_controls "redhat-enterprise-linux-7-stig-baseline" do
 	    auth [default=die] pam_faillock.so authfail audit deny=10 even_deny_root
 	fail_interval=7200 unlock_time=3600
 	    account required pam_faillock.so
-	    If the \"deny\" parameter is set to \"0\" or a value less than \"3\" on
+	    If the \"deny\" parameter is set to \"0\" or a value less than \"10\" on
 	both \"auth\" lines with the \"pam_faillock.so\" module, or is missing from
 	these lines, this is a finding.
 	    If the \"even_deny_root\" parameter is not set on both \"auth\" lines with
