@@ -1,5 +1,5 @@
-name: example-inspec-overlay-profile-red-hat-enterprise-linux-7-stig-overlay
-title: example-inspec-overlay-profile-red-hat-enterprise-linux-7-stig-overlay
+name: example-inspec-overlay-profile-against-rhel7-stig-baseline-profile
+title: example-inspec-overlay-profile-against-rhel7-stig-baseline-profile
 maintainer: Example project
 copyright: 
 copyright_email: .
