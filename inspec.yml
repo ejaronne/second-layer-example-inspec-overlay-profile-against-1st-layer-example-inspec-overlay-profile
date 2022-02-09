@@ -13,6 +13,13 @@ depends:
   url: https://github.com/ejaronne/example-inspec-overlay-profile-against-rhel7-stig-baseline-profile/archive/master.tar.gz
 
 inputs:
+  
+- name: min_len
+  description: V-71935 minimum number of password characters
+  type: Numeric
+  value: 24
+  profile: redhat-enterprise-linux-7-stig-baseline
+  
 - name: unsuccessful_attempts
   description: V-71943 The number of unsuccessful login attempts within a certain interval before lockout.
   type: numeric
