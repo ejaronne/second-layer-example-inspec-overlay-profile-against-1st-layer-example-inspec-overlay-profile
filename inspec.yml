@@ -24,7 +24,7 @@ inputs:
   description: V-71943 The number of unsuccessful login attempts within a certain interval before lockout.
   type: numeric
   value: 20
-  profile: redhat-enterprise-linux-7-stig-baseline
+  profile: example-inspec-overlay-profile-against-rhel7-stig-baseline-profile
   
 - name: disable_slow_controls
   description: Controls that are known to consistently have long run times can be disabled with this attribute
