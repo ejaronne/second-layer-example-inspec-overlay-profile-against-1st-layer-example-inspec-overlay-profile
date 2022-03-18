@@ -5,6 +5,7 @@ include_controls "redhat-enterprise-linux-7-stig-baseline" do
 	 control "V-71935" do
 		title "The Red Hat Enterprise Linux operating system must be configured so
 	that passwords are a minimum of 24 characters in length."
+		desc 'inheritance', 'Project2 gold image team manages and secures all relevant controls for <org> RHEL7 infrastructure'
 		desc 'caveat', 'The project2 requires more secure password length of 24 characters as approved on 1/12/2022'
 		desc  "check", "
 			Verify the operating system enforces a minimum 24-character password
